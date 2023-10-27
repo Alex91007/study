@@ -13,10 +13,10 @@ public class Rainbow {
     private String blue1 = "голубой";
     private String blue2 = "синий";
     private String violet = "феолетоый";
-    private String erro = "Нет такова цвета!";
+    private String error = "Нет такова цвета!";
     public void colorOutput() {
 
-        String str = "Введите один или дваномер цвеита от 1 до 7: ";
+        String str = "Введите один или два номер цвеита от 1 до 7: ";
         System.out.print(str);
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
@@ -25,42 +25,42 @@ public class Rainbow {
         int num2 = number % 10;
 
         if (num1 == num2 || number > 77) {
-            System.out.println(erro);
+            System.out.println(error);
         } else if (number > 10) {
             switch (num1) {
                 case 1: {
-                    String str1 = "красно-";
-                    System.out.print(str1);
+                    String mixedRed = "красно-";
+                    System.out.print(mixedRed);
                     break;
                 }
                 case 2: {
-                    String str2 = "оранжево-";
-                    System.out.print(str2);
+                    String mixedOrange = "оранжево-";
+                    System.out.print(mixedOrange);
                     break;
                 }
                 case 3: {
-                    String str3 = "желто-";
-                    System.out.print(str3);
+                    String mixedYellow = "желто-";
+                    System.out.print(mixedYellow);
                     break;
                 }
                 case 4: {
-                    String str4 = "зелено-";
-                    System.out.print(str4);
+                    String mixedGreen = "зелено-";
+                    System.out.print(mixedGreen);
                     break;
                 }
                 case 5: {
-                    String str5 = "голубо-";
-                    System.out.print(str5);
+                    String mixedBlue1 = "голубо-";
+                    System.out.print(mixedBlue1);
                     break;
                 }
                 case 6: {
-                    String str6 = "синий-";
-                    System.out.print(str6);
+                    String mixedBlue2 = "синий-";
+                    System.out.print(mixedBlue2);
                     break;
                 }
                 case 7: {
-                    String str7 = "феолетоый-";
-                    System.out.print(str7);
+                    String mixedViolet = "феолетоый-";
+                    System.out.print(mixedViolet);
                     break;
                 }
             }
