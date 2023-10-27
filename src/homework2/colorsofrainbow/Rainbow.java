@@ -5,7 +5,17 @@ import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;
 
 public class Rainbow {
+
+    private String red = "красный";
+    private String orange = "оранжевый";
+    private String yellow = "желтый";
+    private String green = "зеленый";
+    private String blue1 = "голубой";
+    private String blue2 = "синий";
+    private String violet = "феолетоый";
+    private String erro = "Нет такова цвета!";
     public void colorOutput() {
+
         String str = "Введите один или дваномер цвеита от 1 до 7: ";
         System.out.print(str);
         Scanner scanner = new Scanner(System.in);
@@ -13,15 +23,6 @@ public class Rainbow {
 
         int num1 = number / 10;
         int num2 = number % 10;
-
-        String red = "красный";
-        String orange = "оранжевый";
-        String yellow = "желтый";
-        String green = "зеленый";
-        String blue1 = "голубой";
-        String blue2 = "синий";
-        String violet = "феолетоый";
-        String erro = "Нет такова цвета!";
 
         if (num1 == num2 || number > 77) {
             System.out.println(erro);
