@@ -45,6 +45,6 @@ public class Cat {
     @Override
     public boolean equals(Object obj) {
         Cat otherCat = (Cat) obj;
-        return this.nameCat == otherCat.nameCat;
+        return this.nameCat == otherCat.nameCat && this.ageCat == otherCat.ageCat;
     }
 }
